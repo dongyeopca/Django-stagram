@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}-register_done{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 panel panel-info">
+        <div class="alert alert-info">회원가입이 완료되었습니다.환엽합니다 {{new_user.username}}님</div>
+        <a class="btn btn-info" href="/">메인으로</a>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+{% endblock %}

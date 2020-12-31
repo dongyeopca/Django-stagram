@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}회원가입{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 panel panel-info">
+        <div class="alert alert-info">계정정보를 입력해주세요</div>
+        <form action="" method="POST">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" value="회원가입" class="btn btn-primary">
+        </form>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+{% endblock %}
